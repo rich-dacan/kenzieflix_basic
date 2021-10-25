@@ -1,2 +1,2 @@
-# K-FLix
- Create web-page os streaming!
+# K-Flix
+ Create web-page of streaming!
