@@ -10,8 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Identifica o tamanho da tela "viewport"-->
 
         <title> KenzieFlix </title> <!-- Título do documento -->
+
+        <link rel="stylesheet" href="style.css">
     </head> 
-    <link rel="stylesheet" href="style.css">
 
         <body >
 
@@ -133,7 +134,7 @@
                         <h2>Em alta</h2>
 
                         <!-- Lista de filmes -->
-                        <ul class="seçãoFilmes-listaFilmes">
+                        <ul class="seçãoFilmes__listaFilmes">
                             <li>
                                 <figure>
                                     <img src="assets/img/filme1.png" alt="Filme 1">
@@ -161,7 +162,7 @@
                 </section>
 
                 <!-- SESSÃO FILMES "CONTINUAR ASSISTINDO" -->
-                <section class="seçãoFilmes seçãoFilmes__progressoFilmes">
+                <section class="seçãoFilmes seçãoFilmes--progressoFilmes">
 
                     <div class="container">
                         <h2>Continuar assistindo</h2>
@@ -169,32 +170,32 @@
                         <ul class="seçãoFilmes-listaFilmes">
                             <li>
                                 <figure>
-                                    <img src="" alt="">
-                                    <figcaption></figcaption>
+                                    <img src="assets/img/filme1.png" alt="Filme 1">
+                                    <figcaption>Name of Movie</figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure>
-                                    <img src="" alt="">
-                                    <figcaption></figcaption>
+                                    <img src="assets/img/filme2.png" alt="Filme 2">
+                                    <figcaption>Name of Movie</figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure>
-                                    <img src="" alt="">
-                                    <figcaption></figcaption>
+                                    <img src="assets/img/filme3.png" alt="Filme 3">
+                                    <figcaption>Name of Movie</figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure>
-                                    <img src="" alt="">
-                                    <figcaption></figcaption>
+                                    <img src="assets/img/filme4.png" alt="Filme 4">
+                                    <figcaption>Name of Movie</figcaption>
                                 </figure>
                             </li>
                             <li>
                                 <figure>
-                                    <img src="" alt="">
-                                    <figcaption></figcaption>
+                                    <img src="assets/img/filme1.png" alt="Filme 5 ">
+                                    <figcaption>Name of Movie</figcaption>
                                 </figure>
                             </li>
                         </ul>
@@ -203,73 +204,289 @@
 
                 </section>
 
-                <!-- SESSÃO FILMES "MINHA LISTA" -->
-                <section class="seçãoFilmes seçãoFilmes__listaParticular">
-                    <div>
-                        
+                <!-- SESSÃO FILMES "MINHA LISTA" // AQUI E COMEÇO A INSERIR A TAG "ANCHOR" NAS IMAGENS POR CONTA PRÓPRIA, POIS PERCEBO QUE QUANDO CLICA-SE NA IMAGEM ELA TE REDIRECIONA PARA O FILME EM QUESTÃO -->
+                <section class="seçãoFilmes seçãoFilmes--listaParticular">
+                    <div class="container">
+                        <h2>Minha Lista</h2>
+
+                        <ul class="seçãoFilmes__listaFilmes">
+                            <li>
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/img/filme1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme2.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme3.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/img/filme4.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                        </ul>
+
                     </div>
 
                 </section>
+
+                <!-- SESSÃO FILMES "SÓ NA KENZIEFLIX" -->
+                <section class="seçãoFilmes seçãoFilmes--exclusivoKenzieFLix">
+                    <div class="container">
+                        <h2>Só na KenzieFlix</h2>
+
+                        <ul class="seçãoFilmes__listaFilmes">
+                            <li>
+                                <picture>
+                                    <a href="#">
+                                        <img src="assets/img/netflix1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">
+                                        <img src="assets/img/netflix2.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">
+                                        <img src="assets/img/netflix3.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">
+                                        <img src="assets/img/netflix1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">
+                                        <img src="assets/img/netflix2.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!-- SESSÃO FILMES "TOP 10 NO BRASIL HOJE" -->
+                <section class="seçãoFilmes seçãoFilmes--top10">
+                    <div class="container">
+                        <h2>Top 10 no Brasil Hoje</h2>
+
+                        <ul>
+                            <li>
+                                <picture>
+                                    <a href="#">Name of Movie
+                                        <img src="assets/img/rank1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">Name of Movie
+                                        <img src="assets/img/rank2.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">Name of Movie
+                                        <img src="assets/img/rank3.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">Name of Movie
+                                        <img src="assets/img/rank4.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <a href="#">Name of Movie
+                                        <img src="assets/img/rank1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                </picture>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!--SESSÃO FILMES "ASSISTIR NOVAMENTE" -->
+                <section class="seçãoFilmes seçãoFilmes--listaParticular">
+                    <div class="container">
+                        <h2>Assistir Novamente</h2>
+
+                        <ul class="seçãoFilmes__listaFilmes">
+                            <li>
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/img/filme1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme2.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme3.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <a href="#">
+                                        <img src="assets/img/filme4.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                     <a href="#">
+                                        <img src="assets/img/filme1.png" alt="Name of Movie">
+                                    </a>
+                                    <figcaption>Name of Movie</figcaption>
+                                    
+                                </figure>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </section>
+                 
 
             </main>
 
             <!-- Rodapé -->
             <footer class="rodape">
 
-                <!-- Social Media -->
-                <div class="rodape-socialMedia">
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="assets/img/fb.png" alt="Facebook">
-                            </a>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <img src="assets/img/ig.png" alt="Instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <img src="assets/img/tt.png" alt="Twitter">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <img src="assets/img/yt.png" alt="Youtube">
-                                </a>
-                            </li>
-                        </li>
-                    </ul>
-                </div>
-                
-                <nav class="rodape-menuNavegação">
-                    <ul>
-                        <li>
-                            <a href="#">Idioma e legendas</a>
-                            <a href="#">Imprensa</a>
-                            <a href="#">Privacidade</a>
-                            <a href="#">Entre em contato</a>
-                        </li>
-                        <li>
-                            <a href="#">Audiodescrição</a>
-                            <a href="#">Relações com investidores</a>
-                            <a href="#">Avisos legais</a>
-                        </li>
-                        <li>
-                            <a href="#">Centro de ajuda</a>
-                            <a href="#">Carreiras</a>
-                            <a href="#">Preferências de cookies</a>
-                        </li>
-                        <li>
-                            <a href="#">Cartão pré-pago</a>
-                            <a href="#">Termos de uso</a>
-                            <a href="#">Informações corporativas</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="container">
 
-                <a href="#" class="rodape-linkCodigo">Código do serviço</a>
-                <p>© 1997-2021 KenzieFlix, Inc.  {i-062d573a0ee099242369}</p>
+                    <!-- Social Media -->
+                    <div class="rodape-socialMedia">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="assets/img/fb.png" alt="Facebook">
+                                </a>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/ig.png" alt="Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/tt.png" alt="Twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/img/yt.png" alt="Youtube">
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <nav class="rodape-menuNavegação">
+                        <ul>
+                            <li>
+                                <a href="#">Idioma e legendas</a>
+                                <a href="#">Imprensa</a>
+                                <a href="#">Privacidade</a>
+                                <a href="#">Entre em contato</a>
+                            </li>
+                            <li>
+                                <a href="#">Audiodescrição</a>
+                                <a href="#">Relações com investidores</a>
+                                <a href="#">Avisos legais</a>
+                            </li>
+                            <li>
+                                <a href="#">Centro de ajuda</a>
+                                <a href="#">Carreiras</a>
+                                <a href="#">Preferências de cookies</a>
+                            </li>
+                            <li>
+                                <a href="#">Cartão pré-pago</a>
+                                <a href="#">Termos de uso</a>
+                                <a href="#">Informações corporativas</a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <a href="#" class="rodape-linkCodigo">Código do serviço</a>
+    
+                    <p>© 1997-2021 KenzieFlix, Inc.  {i-062d573a0ee099242369}</p>
+                </div>
             </footer>
 
   </body>

@@ -1,3 +1,21 @@
 body {
-  background-color: blanchedalmond;
+  background-color:hsla(0, 0%, 8%, 1);
+}
+
+/* ESTILO DO CABEÇALHO */
+.cabeçalho{
+
+}
+
+/* ESTILO DO LOGO */
+.cabeçalho.cabeçalhoLogo{
+
+}
+
+
+.rodape {
+
+  background-color: black;
+  width: auto;
+  height: auto;
 }
