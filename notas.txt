@@ -1,0 +1,13 @@
+CSS - BEM
+B - BLoco
+E - Elemento
+M - Modificador
+
+(BLOCO) section -> "filmes"
+   (ELEMENTO) h2 -> "filmes__tituloSecao"
+
+   (ELEMENTO) ul -> "filmes__listaFilmes"
+
+   (ELEMENTO) a -> "filmes__linkNavegacao" (MODIFICADOR) "filmes__linkNavegacao--white"
+
+   (ELEMENTO) a -> "filmes__linkNavegacao" (MODIFICADOR) "filmes__linkNavegacao--black"

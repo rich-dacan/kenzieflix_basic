@@ -11,104 +11,266 @@
 
         <title> KenzieFlix </title> <!-- Título do documento -->
     </head> 
+    <link rel="stylesheet" href="style.css">
 
-        <body>
+        <body >
 
             <!-- Cabeçalho -->
-            <header class="cabeçalho">
+            <header class="cabeçalho" id="cabeçalho">
 
-                <!-- Tag Semântica; usada pra informar aos buscadores do que se trata essa figura, neste caso uma Logo -->
-                <figure class="cabeçalhoLogo">
-            
-                    <img src="assets/img/logo.png" alt="Logo Kenzie Flix">
-
-                    <figcaption>Logo marca Kenzie Flix</figcaption><!-- "Legenda da Figura" -->
-
-                </figure>
-
-                <!-- Menu de Navegação -->
-                <nav class="menuNavegação">
-
-                    <!-- Lista de links -->
-                    <ul>
-
-                        <li>
-                            <a href="#">Início</a> 
-                        </li>
-                        <li>
-                            <a href="#">Séries</a> 
-                        </li>
-                        <li>
-                            <a href="#">Filmes</a> 
-                        </li>
-                        <li>
-                            <a href="#">Bombando</a> 
-                        </li>
-                        <li>
-                            <a href="#">Minha lista</a> 
-                        </li>
-                        <li>
-                            <a href="#">Assista de novo</a> 
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-                <!-- Div é uma "caixa" que nos ajuda na locomoção de elementos em conjunto; ela não tem nenhuma relevância semântica-->
-                <div class="menuConfig">
-
-                    <ul>
-
-                        <li>
-                            <a href="#">PESQUISA </a>
-                        </li>
-                        <li>
-                            <a href="#">INFANTIL</a>
-                        </li>
-                        <li>
-                            <a href="#">GIFT BOX</a>
-                        </li>
-                        <li>
-                            <a href="#">NOTIFICAÇÕES</a>
-                        </li>
-                        <li>
-                            <a href="#">ESCOLHA DE USUÁRIO</a>
-                        </li>
-                    </ul>
-
+                <div class="container">
+                    
+                    <!-- Tag Semântica; usada pra informar aos buscadores do que se trata essa figura, neste caso uma Logo -->
+                    <figure class="cabeçalhoLogo">
+                
+                        <img src="assets/img/logo.png" alt="Logo Kenzie Flix">
+    
+                        <figcaption>Logo marca Kenzie Flix</figcaption><!-- "Legenda da Figura" -->
+    
+                    </figure>
+    
+                    <!-- Menu de Navegação -->
+                    <nav class="menuNavegação">
+    
+                        <!-- Lista de links -->
+                        <ul>
+    
+                            <li>
+                                <a href="#">Início</a> 
+                            </li>
+                            <li>
+                                <a href="#">Séries</a> 
+                            </li>
+                            <li>
+                                <a href="#">Filmes</a> 
+                            </li>
+                            <li>
+                                <a href="#">Bombando</a> 
+                            </li>
+                            <li>
+                                <a href="#">Minha lista</a> 
+                            </li>
+                            <li>
+                                <a href="#">Assistir Novamente</a> 
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <!-- Div é uma "caixa" que nos ajuda na locomoção de elementos em conjunto; ela não tem nenhuma relevância semântica-->
+                    <div class="menuConfig">
+    
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/pesquisa.png" alt="Pesquisar">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">INFANTIL</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/presente.png" alt="GIFT BOX">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/notificacao.png" alt="NOTIFICAÇÕES">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/ProfileIMG.png" alt="ESCOLHA DE USUÁRIO ">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </header>
 
             <!-- TAg pra designar o conteúdo principal da page-->
             <main>
 
+                <!-- Sessão "Em Destaque" -->
                 <section class="seçãoDestaque">
+                    <div class="container">
 
-                    <figure class="seçãoDestaque-image">
-                        <img src="assets/img/destaque.png" alt="Name of Movie" srcset="">
-                        <figcaption>Conteúdo em Destaque</figcaption>
-                    </figure>
+                        <!-- Imagem em Destaque -->
+                        <figure class="seçãoDestaque-image">
 
-                    <!-- Tag usada pra definir o conteúdo mais relevante dessa section -->
-                    <article class="seçãoDestaque-descrição">
+                            <img src="assets/img/destaque.png" alt="Name of Movie" srcset="">
+                            <figcaption>Name of Movie</figcaption>
 
-                        <h1>Stranger Things</h1>
-                        <p>Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+                        </figure>
+    
+                        <!-- Tag usada pra definir o conteúdo mais relevante dessa section -->
+                        <article class="seçãoDestaque-descrição">
+    
+                            <h1><img src="assets/img/titulo-destaque.png" alt="Título Destaque"></h1>
 
-                    </article>
+                            <p>Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+    
+                        </article>
+
+                        <!-- LINKS DE NAVEGAÇÃO -->
+                        <div class="seçãoDestaque-navegação">
+    
+                            <a href="#">
+                                <img src="assets/img/assistir.png" alt="Icon Play">Assistir
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/info.png" alt="Icon Info">Mais Informações
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sessão Filmes "Em Alta" -->
+                <section class="seçãoFilmes">
                     
-                    <div class="seçãoDestaque-navegação">
+                    <div class="container">
+                        <!-- Título desta seção -->
+                        <h2>Em alta</h2>
 
-                        <a href="#">Assistir</a>
-                        <a href="#">Mais informações</a>
+                        <!-- Lista de filmes -->
+                        <ul class="seçãoFilmes-listaFilmes">
+                            <li>
+                                <figure>
+                                    <img src="assets/img/filme1.png" alt="Filme 1">
+                                    <figcaption>Filme 1</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/filme2.png" alt="Filme 2">
+                                    <figcaption>Filme 2</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/filme3.png" alt="Filme 3">
+                                    <figcaption>Filme 3</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/filme4.png" alt="Filme 4">
+                                    <figcaption>Filme 4</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="assets/img/filme1.png" alt="Filme 5">
+                                    <figcaption>Filme 5</figcaption>
+                                </figure>
+                            </li> 
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- SESSÃO FILMES "CONTINUAR ASSISTINDO" -->
+                <section class="seçãoFilmes seçãoFilmes__progressoFilmes">
+
+                    <div class="container">
+                        <h2>Continuar assistindo</h2>
+
+                        <ul class="seçãoFilmes-listaFilmes">
+                            <li>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="" alt="">
+                                    <figcaption></figcaption>
+                                </figure>
+                            </li>
+                        </ul>
 
                     </div>
-                    
+
+                </section>
+
+                <!-- SESSÃO FILMES "MINHA LISTA" -->
+                <section class="seçãoFilmes seçãoFilmes__listaParticular">
+                    <div>
+                        
+                    </div>
+
                 </section>
 
             </main>
+
+            <!-- Rodapé -->
+            <footer class="rodape">
+
+                <!-- Social Media -->
+                <div class="rodape-socialMedia">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="assets/img/fb.png" alt="Facebook">
+                            </a>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="assets/img/ig.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="assets/img/tt.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img src="assets/img/yt.png" alt="Youtube">
+                                </a>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+                
+                <nav class="rodape-menuNavegação">
+                    <ul>
+                        <li>
+                            <a href="#">Idioma e legendas</a>
+                            <a href="#">Imprensa</a>
+                            <a href="#">Privacidade</a>
+                            <a href="#">Entre em contato</a>
+                        </li>
+                        <li>
+                            <a href="#">Audiodescrição</a>
+                            <a href="#">Relações com investidores</a>
+                            <a href="#">Avisos legais</a>
+                        </li>
+                        <li>
+                            <a href="#">Centro de ajuda</a>
+                            <a href="#">Carreiras</a>
+                            <a href="#">Preferências de cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Cartão pré-pago</a>
+                            <a href="#">Termos de uso</a>
+                            <a href="#">Informações corporativas</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="rodape-linkCodigo">Código do serviço</a>
+                <p>© 1997-2021 KenzieFlix, Inc.  {i-062d573a0ee099242369}</p>
+            </footer>
 
   </body>
 
