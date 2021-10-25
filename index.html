@@ -1,12 +1,115 @@
-<!DOCTYPE html><!--Declaração de versão do documento atual -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<!DOCTYPE html><!-- Declaração de versão do documento atual -->
+<html lang="pt-br"><!-- Aqui se inicia o documento -->
+
+    <head><!--Tag de configurações; não ficará visível-->
+
+        <meta charset="UTF-8"><!-- Meta-tag´s de configurações; UTF-8 serve pra reconhecer caracteres especiais -->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Identifica o tamanho da tela "viewport"-->
+
+        <title> KenzieFlix </title> <!-- Título do documento -->
+    </head> 
+
+        <body>
+
+            <!-- Cabeçalho -->
+            <header class="cabeçalho">
+
+                <!-- Tag Semântica; usada pra informar aos buscadores do que se trata essa figura, neste caso uma Logo -->
+                <figure class="cabeçalhoLogo">
+            
+                    <img src="assets/img/logo.png" alt="Logo Kenzie Flix">
+
+                    <figcaption>Logo marca Kenzie Flix</figcaption><!-- "Legenda da Figura" -->
+
+                </figure>
+
+                <!-- Menu de Navegação -->
+                <nav class="menuNavegação">
+
+                    <!-- Lista de links -->
+                    <ul>
+
+                        <li>
+                            <a href="#">Início</a> 
+                        </li>
+                        <li>
+                            <a href="#">Séries</a> 
+                        </li>
+                        <li>
+                            <a href="#">Filmes</a> 
+                        </li>
+                        <li>
+                            <a href="#">Bombando</a> 
+                        </li>
+                        <li>
+                            <a href="#">Minha lista</a> 
+                        </li>
+                        <li>
+                            <a href="#">Assista de novo</a> 
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <!-- Div é uma "caixa" que nos ajuda na locomoção de elementos em conjunto; ela não tem nenhuma relevância semântica-->
+                <div class="menuConfig">
+
+                    <ul>
+
+                        <li>
+                            <a href="#">PESQUISA </a>
+                        </li>
+                        <li>
+                            <a href="#">INFANTIL</a>
+                        </li>
+                        <li>
+                            <a href="#">GIFT BOX</a>
+                        </li>
+                        <li>
+                            <a href="#">NOTIFICAÇÕES</a>
+                        </li>
+                        <li>
+                            <a href="#">ESCOLHA DE USUÁRIO</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </header>
+
+            <!-- TAg pra designar o conteúdo principal da page-->
+            <main>
+
+                <section class="seçãoDestaque">
+
+                    <figure class="seçãoDestaque-image">
+                        <img src="assets/img/destaque.png" alt="Name of Movie" srcset="">
+                        <figcaption>Conteúdo em Destaque</figcaption>
+                    </figure>
+
+                    <!-- Tag usada pra definir o conteúdo mais relevante dessa section -->
+                    <article class="seçãoDestaque-descrição">
+
+                        <h1>Stranger Things</h1>
+                        <p>Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+
+                    </article>
+                    
+                    <div class="seçãoDestaque-navegação">
+
+                        <a href="#">Assistir</a>
+                        <a href="#">Mais informações</a>
+
+                    </div>
+                    
+                </section>
+
+            </main>
+
+  </body>
+
 </html>
