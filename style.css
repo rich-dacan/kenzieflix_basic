@@ -1,21 +1,89 @@
-body {
+/*Cascading Style Sheets(Folha de Estilos em Cascata, em português)
+ - ESTRUTURA DO CSS
+--seletor - selecionar um elemento
+--propriedade - cor de fundo
+--valor - azul
+--declaração de uma regra */
+
+/* ESTILO GERAIS // reset css padrão */
+body,figure,img,div,header,nav,main,ul,li,p,section,article,h1,h2,footer {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+figcaption {
+  display: none;
+}
+img {
+  max-width: 1200px;
+}
+
+/* ESTILO DO CABEÇALHO (HEADER) */
+.cabeçalho {
   background-color:hsla(0, 0%, 8%, 1);
 }
 
-/* ESTILO DO CABEÇALHO */
-.cabeçalho{
-
-}
-
 /* ESTILO DO LOGO */
-.cabeçalho.cabeçalhoLogo{
+.cabeçalho .cabeçalho__Logo {}
+.cabeçalho .cabeçalho__logo img {}
 
+/* ESTILO DO MENU */
+.cabeçalho .menuNavegação
+.cabeçalho .menuNavegação ul {}
+.cabeçalho .menuNavegação li {}
+.cabeçalho .menuNavegação a {}
+
+/* ESTILO DO ÁREA DE CONFIGURAÇÃO */
+.cabeçalho .menuConfig {}
+.cabeçalho .menuConfig ul {}
+.cabeçalho .menuConfig li {}
+.cabeçalho .menuConfig a {}
+
+/* ESTILO DO SEÇÃO DESTAQUE */
+.seçãoDestaque {}
+.seçãoDestaque .seçãoDestaque__image {}
+.seçãoDestaque .seçãoDestaque__image img {
+  width: 100%;
 }
 
 
-.rodape {
+.seçãoDestaque .seçãoDestaque__descrição {}
+.seçãoDestaque .seçãoDestaque__descrição h1 {}
+.seçãoDestaque .seçãoDestaque__descrição p {}
 
-  background-color: black;
-  width: auto;
-  height: auto;
-}
+/* ESTILO DO SEÇÃO NAVEGAÇÃO */
+.seçãoDestaque .seçãoDestaque__navegação {}
+.seçãoDestaque .seçãoDestaque__navegação a {}
+.seçãoDestaque .seçãoDestaque__navegação img {}
+
+/* ESTILO DO SEÇÃO FILMES EM ALTA */
+.seçãoFilmes {}
+.seçãoFilmes h2 {}
+.seçãoFilmes .seçãoFilmes__listaFilmes {}
+.seçãoFilmes .seçãoFilmes__listaFilmes ul {}
+.seçãoFilmes .seçãoFilmes__listaFilmes li {}
+.seçãoFilmes .seçãoFilmes__listaFilmes li figure {}
+.seçãoFilmes .seçãoFilmes__listaFilmes li img {}
+
+
+
+
+/* ESTILO RODAPE */
+.rodape {}
+.rodape .rodape__socialMedia {}
+.rodape .rodape__socialMedia ul {}
+.rodape .rodape__socialMedia ul li {}
+.rodape .rodape__socialMedia ul li a {}
+.rodape .rodape__socialMedia ul li a img {}
+
+.rodape .rodape__menuNavegação {}
+.rodape .rodape__menuNavegação ul {}
+.rodape .rodape__menuNavegação ul li {}
+.rodape .rodape__menuNavegação ul li a {}
+
+.rodape .rodape__linkCodigo
+.rodape p {}
+
