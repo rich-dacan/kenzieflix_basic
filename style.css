@@ -15,15 +15,18 @@ body,figure,img,div,header,nav,main,ul,li,p,section,article,h1,h2,footer {
   outline: none;
 }
 figcaption {
-  display: none;
+  /* Esconde essa linha no documento */
+  display: none; 
 }
-img {
-  max-width: 1200px;
-}
+  img {
+  max-width: 100%;
+ } 
 
 /* ESTILO DO CABEÇALHO (HEADER) */
 .cabeçalho {
   background-color:hsla(0, 0%, 8%, 1);
+  text-align: center;
+  padding: 16px 0;
 }
 
 /* ESTILO DO LOGO */
@@ -31,28 +34,44 @@ img {
 .cabeçalho .cabeçalho__logo img {}
 
 /* ESTILO DO MENU */
-.cabeçalho .menuNavegação
+.cabeçalho .menuNavegação, .cabeçalho .menuConfig, .seçãoDestaque .seçãoDestaque__image  {
+
+  display: none;
+}
 .cabeçalho .menuNavegação ul {}
 .cabeçalho .menuNavegação li {}
 .cabeçalho .menuNavegação a {}
 
 /* ESTILO DO ÁREA DE CONFIGURAÇÃO */
-.cabeçalho .menuConfig {}
 .cabeçalho .menuConfig ul {}
 .cabeçalho .menuConfig li {}
 .cabeçalho .menuConfig a {}
 
 /* ESTILO DO SEÇÃO DESTAQUE */
-.seçãoDestaque {}
-.seçãoDestaque .seçãoDestaque__image {}
+.seçãoDestaque {
+
+  background-image: url(assets/img/destaque.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 .seçãoDestaque .seçãoDestaque__image img {
   width: 100%;
 }
 
 
-.seçãoDestaque .seçãoDestaque__descrição {}
-.seçãoDestaque .seçãoDestaque__descrição h1 {}
-.seçãoDestaque .seçãoDestaque__descrição p {}
+.seçãoDestaque .seçãoDestaque__descrição {
+
+  
+}
+.seçãoDestaque .seçãoDestaque__descrição h1 img {
+  width: 100%
+
+}
+.seçãoDestaque .seçãoDestaque__descrição p {
+  
+}
 
 /* ESTILO DO SEÇÃO NAVEGAÇÃO */
 .seçãoDestaque .seçãoDestaque__navegação {}
