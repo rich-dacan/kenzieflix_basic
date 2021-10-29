@@ -1,5 +1,5 @@
-<!DOCTYPE html><!-- Declaração de versão do documento atual -->
-<html lang="pt-br"><!-- Aqui se inicia o documento -->
+<!DOCTYPE html>         <!-- Declaração de versão do documento atual -->
+<html lang="pt-br">          <!-- Aqui se inicia o documento -->
 
     <head><!--Tag de configurações; não ficará visível-->
 
@@ -11,18 +11,22 @@
 
         <title> KenzieFlix </title> <!-- Título do documento -->
 
+        <!-- IMPORTANTO ARQUIVO CSS/ ARQUIVO DE ESTILO -->
         <link rel="stylesheet" href="style.css">
     </head> 
+       
+
+        
 
         <body >
 
             <!-- Cabeçalho -->
-            <header class="cabeçalho" id="cabeçalho">
+            <header class="cabecalho" id="idCabecalho">
 
                 <div class="container">
                     
                     <!-- Tag Semântica; usada pra informar aos buscadores do que se trata essa figura, neste caso uma Logo -->
-                    <figure class="cabeçalho__Logo">
+                    <figure class="cabecalho__Logo">
                 
                         <img src="assets/img/logo.png" alt="Logo Kenzie Flix">
     
@@ -31,7 +35,7 @@
                     </figure>
     
                     <!-- Menu de Navegação -->
-                    <nav class="menuNavegação">
+                    <nav class="cabecalho__menu">
     
                         <!-- Lista de links -->
                         <ul>
@@ -58,7 +62,7 @@
                     </nav>
     
                     <!-- Div é uma "caixa" que nos ajuda na locomoção de elementos em conjunto; ela não tem nenhuma relevância semântica-->
-                    <div class="menuConfig">
+                    <div class="cabecalho__menuConfiguracao">
     
                         <ul>
                             <li>
@@ -93,11 +97,12 @@
             <main>
 
                 <!-- SEÇÃO "Em Destaque" -->
-                <section class="seçãoDestaque">
+                <section class="secaoDestaque">
+
                     <div class="container">
 
                         <!-- Imagem em Destaque -->
-                        <figure class="seçãoDestaque__image">
+                        <figure class="secaoDestaque__imagemDestaque">
 
                             <img src="assets/img/destaque.png" alt="Name of Movie" srcset="">
                             <figcaption>Name of Movie</figcaption>
@@ -105,7 +110,7 @@
                         </figure>
     
                         <!-- CONTEÚDO DESTAQUE // Tag semântica usada pra definir o conteúdo mais relevante dessa section -->
-                        <article class="seçãoDestaque__descrição">
+                        <article class="secaoDestaque__descricaoDestaque">
     
                             <h1><img src="assets/img/titulo-destaque.png" alt="Título Destaque"></h1>
 
@@ -114,27 +119,27 @@
                         </article>
 
                         <!-- LINKS DE NAVEGAÇÃO -->
-                        <div class="seçãoDestaque__navegação">
+                        <div class="secaoDestaque__navegacaoDestaque">
     
                             <a href="#">
                                 <img src="assets/img/assistir.png" alt="Icon Play">Assistir
                             </a>
                             <a href="#">
-                                <img src="assets/img/info.png" alt="Icon Info">Mais Informações
+                                <img src="assets/img/info.png" alt="Icon Info"> Mais Informações
                             </a>
                         </div>
                     </div>
                 </section>
 
                 <!-- SEÇÃO FILMES "Em Alta" -->
-                <section class="seçãoFilmes">
+                <section class="secaoFilmes">
                     
                     <div class="container">
                         <!-- Título desta seção -->
                         <h2>Em alta</h2>
 
                         <!-- Lista de filmes -->
-                        <ul class="seçãoFilmes__listaFilmes">
+                        <ul class="secaoFilmes__listaFilmes">
                             <li>
                                 <figure>
                                     <img src="assets/img/filme1.png" alt="Filme 1">
@@ -162,12 +167,12 @@
                 </section>
 
                 <!-- SEÇÃO FILMES "CONTINUAR ASSISTINDO" -->
-                <section class="seçãoFilmes seçãoFilmes--progressoFilmes">
+                <section class="secaoFilmes secaoFilmes--progressoFilmes">
 
                     <div class="container">
                         <h2>Continuar assistindo</h2>
 
-                        <ul class="seçãoFilmes-listaFilmes">
+                        <ul class="secaoFilmes__listaFilmes">
                             <li>
                                 <figure>
                                     <img src="assets/img/filme1.png" alt="Filme 1">
@@ -205,10 +210,13 @@
                 </section>
 
                 <!-- SEÇÃO FILMES "MINHA LISTA" // AQUI E COMEÇO A INSERIR A TAG "ANCHOR" NAS IMAGENS POR CONTA PRÓPRIA, POIS PERCEBO QUE QUANDO CLICA-SE NA IMAGEM ELA TE REDIRECIONA PARA O FILME EM QUESTÃO -->
-                <section class="seçãoFilmes seçãoFilmes--listaParticular">
+                <section class="secaoFilmes">
+
                     <div class="container">
+                        <!-- TÍTULO DA SEÇÃO -->
                         <h2>Minha Lista</h2>
 
+                        <!-- LISTA DE FILMES -->
                         <ul class="seçãoFilmes__listaFilmes">
                             <li>
                                 <figure>
@@ -262,11 +270,11 @@
                 </section>
 
                 <!-- SEÇÃO FILMES "SÓ NA KENZIEFLIX" -->
-                <section class="seçãoFilmes seçãoFilmes--exclusivoKenzieFLix">
+                <section class="secaoFilmes">
                     <div class="container">
                         <h2>Só na KenzieFlix</h2>
 
-                        <ul class="seçãoFilmes__listaFilmes">
+                        <ul class="secaoFilmes__listaFilmes">
                             <li>
                                 <picture>
                                     <a href="#">
@@ -315,11 +323,12 @@
                 </section>
 
                 <!-- SEÇÃO FILMES "TOP 10 NO BRASIL HOJE" -->
-                <section class="seçãoFilmes seçãoFilmes--top10">
+                <section class="secaoFilmes">
+
                     <div class="container">
                         <h2>Top 10 no Brasil Hoje</h2>
 
-                        <ul>
+                        <ul class="secaoFilmes__listaFilmes">
                             <li>
                                 <picture>
                                     <a href="#">Name of Movie
@@ -367,11 +376,11 @@
                 </section>
 
                 <!-- SEÇÃO FILMES "ASSISTIR NOVAMENTE" -->
-                <section class="seçãoFilmes seçãoFilmes--listaParticular">
+                <section class="secaoFilmes">
                     <div class="container">
                         <h2>Assistir Novamente</h2>
 
-                        <ul class="seçãoFilmes__listaFilmes">
+                        <ul class="secaoFilmes__listaFilmes">
                             <li>
                                 <figure>
                                     <a href="#">

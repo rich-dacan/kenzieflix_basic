@@ -23,60 +23,63 @@ figcaption {
  } 
 
 /* ESTILO DO CABEÇALHO (HEADER) */
-.cabeçalho {
+.cabecalho {
   background-color:hsla(0, 0%, 8%, 1);
   text-align: center;
   padding: 16px 0;
 }
 
 /* ESTILO DO LOGO */
-.cabeçalho .cabeçalho__Logo {}
-.cabeçalho .cabeçalho__logo img {}
+.cabecalho .cabecalho__Logo {}
+.cabecalho .cabecalho__Logo img {}
 
 /* ESTILO DO MENU */
-.cabeçalho .menuNavegação, .cabeçalho .menuConfig, .seçãoDestaque .seçãoDestaque__image  {
-
+.cabecalho .cabecalho__menu, .cabecalho .cabecalho__menuConfiguracao, .secaoDestaque .secaoDestaque__imagemDestaque  {
   display: none;
 }
-.cabeçalho .menuNavegação ul {}
-.cabeçalho .menuNavegação li {}
-.cabeçalho .menuNavegação a {}
+.cabeçalho .cabecalho__menu ul {}
+.cabeçalho .cabecalho__menu li {}
+.cabeçalho .cabecalho__menu a {}
 
 /* ESTILO DO ÁREA DE CONFIGURAÇÃO */
-.cabeçalho .menuConfig ul {}
-.cabeçalho .menuConfig li {}
-.cabeçalho .menuConfig a {}
+.cabecalho .cabecalho__menuConfiguracao ul {}
+.cabecalho .cabecalho__menuConfiguracao li {}
+.cabecalho .cabecalho__menuConfiguracao a {}
 
 /* ESTILO DO SEÇÃO DESTAQUE */
-.seçãoDestaque {
-
+.secaoDestaque {
   background-image: url(assets/img/destaque.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.seçãoDestaque .seçãoDestaque__image img {
+
+.secaoDestaque .secaoDestaque__imagemDestaque img {
+  /* width: 100%;  */
+}
+
+
+.secaoDestaque .secaoDestaque__descricaoDestaque {
+  color: white;
+}
+
+.secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
   width: 100%;
 }
 
+.secaoDestaque .secaoDestaque__descricaoDestaque h1 {}
 
-.seçãoDestaque .seçãoDestaque__descrição {
-
-  
-}
-.seçãoDestaque .seçãoDestaque__descrição h1 img {
-  width: 100%
-
-}
-.seçãoDestaque .seçãoDestaque__descrição p {
+.secaoDestaque__descricaoDestaque p {
   
 }
 
 /* ESTILO DO SEÇÃO NAVEGAÇÃO */
-.seçãoDestaque .seçãoDestaque__navegação {}
-.seçãoDestaque .seçãoDestaque__navegação a {}
-.seçãoDestaque .seçãoDestaque__navegação img {}
+.secaoDestaque__navegacaoDestaque {}
+.ssecaoDestaque__navegacaoDestaque a {}
+.secaoDestaque__navegacaoDestaque img {}
+
+
+
 
 /* ESTILO DO SEÇÃO FILMES EM ALTA */
 .seçãoFilmes {}
