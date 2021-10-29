@@ -163,3 +163,11 @@ main {
 }
 .rodape p {}
 
+@media screen and (min-width: 620px) {
+  .secaoDestaque {
+    padding: 100px 20px 42px;
+  }
+  .secaoDestaque .secaoDestaque__descricaoDestaque h1 img {
+    max-width: 330px;
+}
+}
