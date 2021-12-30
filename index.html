@@ -19,9 +19,6 @@
         <link rel="stylesheet" href="style.css">
     </head> 
        
-
-        
-
         <body >
 
             <!-- Cabeçalho -->
@@ -39,7 +36,8 @@
                     </figure>
     
                     <!-- Menu de Navegação -->
-                    <nav class="cabecalho__menu">
+                    <div class="cabecalho__menu">
+                      <nav>
     
                         <!-- Lista de links -->
                         <ul>
@@ -64,6 +62,8 @@
                             </li>
                         </ul>
                     </nav>
+                    </div>
+                    
     
                     <!-- Div é uma "caixa" que nos ajuda na locomoção de elementos em conjunto; ela não tem nenhuma relevância semântica-->
                     <div class="cabecalho__menuConfiguracao">
@@ -124,9 +124,30 @@
 
                         <!-- LINKS DE NAVEGAÇÃO -->
                         <div class="secaoDestaque__navegacaoDestaque">
-    
-                            <a href="#">Assistir</a>
-                            <a href="#">Mais Informações</a>
+                          <button class="btn1">
+                            <span class="watch">
+                              <img src="assets/img/assistir.png" alt="">
+                            </span>
+                            <span class="watch-now">Assistir</span>
+                            
+                          </button>
+                          <button class="btn2">
+                            <span class="info">
+                            <img src="assets/img/info.png" alt="">
+                            </span>
+                            <span class="info-letter">Mais Informações</span>
+                          </button>
+                          
+                          
+                        </button>
+
+
+                            <!-- <span  class="watch-now"><img style="height: 20px;" src="assets/img/assistir.png" alt=""></span>
+
+                            <span class="watch-now"><a  href="#"> Assistir</a></span>
+                            
+                            
+                            <a id="more-information" href="#"><img style="height: 15px;" src="assets/img/info.png" alt=""> Mais Informações</a> -->
 
                         </div>
                     </div>
